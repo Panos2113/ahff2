@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Australian Hellenic Future Fund</title>
+  <style>
+    /* Reset & Core Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+      /* Faded Background with Parthenon image */
+      background: 
+        linear-gradient(rgba(10, 25, 47, 0.75), rgba(10, 25, 47, 0.85)),
+        url('https://images.unsplash.com/photo-1555993539-1732b0258235?auto=format&fit=crop&q=80&w=1920') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Header Flags */
+    .header-flags {
+      width: 100%;
+      max-width: 1200px;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+
+    .flag {
+      width: 65px;
+      height: 45px;
+      object-fit: cover;
+      border-radius: 4px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Main Container */
+    .container {
+      width: 90%;
+      max-width: 650px;
+      padding: 40px 20px;
+      z-index: 10;
+      margin: auto;
+    }
+
+    /* Typography */
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #e2e8f0;
+      margin-bottom: 40px;
+      font-weight: 300;
+    }
+
+    /* Link Boxes Stack */
+    .links-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .link-box {
+      display: block;
+      width: 100%;
+      padding: 16px 24px;
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Hover State */
+    .link-box:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Special Highlight for Donate Link */
+    .link-box.donate {
+      background: #0056b3; /* Greek Blue Accent */
+      border-color: #3385ff;
+    }
+
+    .link-box.donate:hover {
+      background: #004085;
+    }
+
+    /* Footer */
+    footer {
+      padding: 20px;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+      z-index: 10;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .flag {
+        width: 50px;
+        height: 35px;
+      }
+      .container {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Flags Bar -->
+  <header class="header-flags">
+    <!-- Left: Greek Flag -->
+    <img 
+      src="https://flagcdn.com/w160/gr.png" 
+      alt="Greek Flag" 
+      class="flag"
+    >
+    <!-- Right: Australian Flag -->
+    <img 
+      src="https://flagcdn.com/w160/au.png" 
+      alt="Australian Flag" 
+      class="flag"
+    >
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <h1>Australian Hellenic Future Fund</h1>
+    <p class="subtitle">Preserving Heritage • Empowering Future Generations</p>
+
+    <div class="links-wrapper">
+      <!-- Edit the href="#" values below with your actual destination URLs -->
+      
+      <!-- Link 1: Giving Mandate -->
+      <a href="https://your-website.com/giving-mandate" class="link-box" target="_blank">
+        Giving Mandate
+      </a>
+
+      <!-- Link 2: Giving Board Constitution -->
+      <a href="https://your-website.com/constitution" class="link-box" target="_blank">
+        Giving Board Constitution
+      </a>
+
+      <!-- Link 3: Donate Box -->
+      <a href="https://your-website.com/donate" class="link-box donate" target="_blank">
+        Donate Now
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; Australian Hellenic Future Fund. All rights reserved.
+  </footer>
+
+</body>
+</html>
